@@ -25,3 +25,9 @@ sudo nano /etc/ssh/sshd_config
 
 sudo systemctl restart sshd
 
+sudo apt install ufw
+sudo ufw default allow outgoing
+sudo ufw default deny incoming
+sudo ufw allow ssh
+sudo ufw allow 5000
+sudo ufw enable
